@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WikiBrumBrum - Página de Vehículos</title>
+<style>
+  body {
+    background-color: #0e385f; 
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .image {
+    animation: slide 5s infinite alternate;
+    transition: filter 0.5s ease;
+    margin-bottom: 20px;
+  }
+
+  .image:hover {
+    filter: blur(3px);
+  }
+
+  .info {
+    position: absolute;
+    background: rgba(14, 56, 95, 0.8); 
+    color: #ffffff; 
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+
+  .image:hover + .info {
+    display: block;
+  }
+
+  .comments {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .comments textarea {
+    width: 300px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .comments button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0e385f;
+    cursor: pointer;
+  }
+
+  .comments button:hover {
+    background-color: #ddd;
+  }
+
+  .upcoming {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div>
+    <img class="image" src="450_1000.jpg" alt="Nuevo Ford Mustang" width="300">
+    <div class="info">El Ford Mustang es un automóvil deportivo fabricado por la compañía estadounidense Ford. Con su diseño clásico y su potente motor, el Mustang es un icono de la industria automotriz.</div>
+  </div>
+  <div>
+    <img class="image" src="58bfe475b692e1a86b78ec1df26abe20.jpg" alt="Nuevo Chevrolet Camaro" width="300">
+    <div class="info">El Chevrolet Camaro es otro legendario automóvil deportivo estadounidense. Con su estilo agresivo y su potencia, el Camaro ha sido un rival del Mustang a lo largo de los años.</div>
+  </div>
+  <div>
+    <img class="image" src="dodge-challenger-rt-1970-3042598.webp" alt="Nuevo Dodge Challenger" width="300">
+    <div class="info">El Dodge Challenger es un muscle car estadounidense conocido por su estilo retro y su impresionante rendimiento. Es uno de los autos más emblemáticos de la marca Dodge.</div>
+  </div>
+  <div class="upcoming">Próximamente</div>
+  <div class="upcoming">Próximamente</div>
+  <div class="upcoming">Próximamente</div>
+  <div class="upcoming">Próximamente</div>
+</div>
+
+<div class="comments">
+  <textarea placeholder="¿Qué autos te gustaría ver?"></textarea><br>
+  <button>Enviar</button>
+</div>
+
+</body>
+</html>
